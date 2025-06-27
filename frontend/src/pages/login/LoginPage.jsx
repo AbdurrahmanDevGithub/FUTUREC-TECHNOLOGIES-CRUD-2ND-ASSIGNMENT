@@ -7,7 +7,6 @@ const LoginPage = () => {
 
   return (
     <div>
-      {/* Navigation Links */}
       <div>
         <a onClick={() => setShowLogin(true)} style={{ marginRight: '10px', cursor: 'pointer' }}>
           <u>Login</u>
@@ -18,12 +17,10 @@ const LoginPage = () => {
         <br /><br />
       </div>
 
-      {/* Login or Register Form */}
       {showLogin ? <Login /> : <Register />}
 
       <br /><br />
 
-      {/* App Info */}
       <div>
         <p>
           -This project mainly focuses on the functionality using <b>React</b> for the frontend and <b>Node.js + Express</b> for the backend.
