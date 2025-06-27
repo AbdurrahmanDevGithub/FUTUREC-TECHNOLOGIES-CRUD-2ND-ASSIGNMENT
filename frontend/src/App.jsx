@@ -3,8 +3,8 @@ import Home from './pages/home/Home'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoginPage from './pages/login/LoginPage'
-import UpdateProductPage from './pages/update products/updateProductsPage'
-import AddProducts from './components/Products/AddProducts'
+import UpdateProductPage from './pages/products/updateProductsPage'
+import AddProductsPage from './pages/products/AddProductsPage'
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/home" element={<Home />} />
         <Route path="/update/:id" element={<UpdateProductPage />} />
-        <Route path="/add_product" element={<AddProducts />} />
+        <Route path="/add_product" element={<AddProductsPage />} />
       </Routes>
     </Router>
     </>
